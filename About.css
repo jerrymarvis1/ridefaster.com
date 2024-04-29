@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(images/About\ us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navContainer{
+    margin: 15px;
+    padding: 10px;
+}
+ul{
+    display: flex;
+    color: white;
+}
+ul li{
+    margin-right: 20px;
+    padding: 10px;
+    list-style-type: none;
+    font-size: 18px;
+    font-family: poppins;
+    font-weight: 400;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+ul li:hover{
+    background: rgb(88, 88, 88);
+    border-radius: 5px;
+}
+
+#AboutUs{
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: white;
+    margin: 30px;
+    padding: 40px;
+}
+#AboutUs h1{
+    font-family: poppins;
+    color: beige;
+    font-size: 3em;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+#AboutUs p{
+    font-size: 24px;
+}
+
+@media (max-width: 800px){
+    
+    #AboutUs{
+        width: auto;
+        height: auto;
+        text-align: center;
+        color: white;
+        margin: 20px;
+        padding: 20px;
+}
+.navigation{
+    display: none;
+}
+.menu{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url(images/menu.png);
+    background-size: 43px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 100000;
+}
+.menu.active{
+    background: url(images/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.navigation.active{
+    width: 270px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.navigation ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -70px;
+}
+.navigation ul li{
+    margin: 30px;
+    padding: 10px;
+}
+}
