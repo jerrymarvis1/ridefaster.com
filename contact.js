@@ -3,5 +3,5 @@ function sendUsMessage(){
 }
 
 function whatsAppChat(){
-    window.location.href = ""
+    window.location.href = "https://wa.me/message/XPQRFD7SYYFKC1"
 }
